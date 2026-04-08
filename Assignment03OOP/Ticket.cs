@@ -20,7 +20,7 @@ namespace Assignment03OOP
             {
                  if(value > 0)
                 {
-                    Price = value;
+                    _price = value;
                 }
             }
         }
@@ -34,10 +34,10 @@ namespace Assignment03OOP
                 {
                     Console.WriteLine("Invalid can not be null or less than 2 ");
                 }
-                MovieName = value;
+                _moviename = value;
             }
         }
-        public decimal PriceAfterTax => Price += (14 / 100);
+        public decimal PriceAfterTax => Price *= (14 / 100);
         public Ticket(string moviename,decimal price)
         {
             MovieName = moviename;

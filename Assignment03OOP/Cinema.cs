@@ -22,6 +22,7 @@ namespace Assignment03OOP
                 if (_tickets[i] == null)
                 {
                     _tickets[i] = t;
+                    break;
                 }
             }
         }
